@@ -1,8 +1,7 @@
 var express = require('express');
 var router = express.Router();
-var model = require('../models/word');
+var model = require('../models/Word');
 
-/* GET api listing. */
 router.get('/', function(req, res, next) {
   model.find(function(err, words) {
     res.json(words);

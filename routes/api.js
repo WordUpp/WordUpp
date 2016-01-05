@@ -1,9 +1,12 @@
 var express = require('express');
 var router = express.Router();
+var model = require('../models/word');
 
-/* GET users listing. */
+/* GET api listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  model.find(function(err, words) {
+    res.json(words);
+  });
 });
 
 module.exports = router;

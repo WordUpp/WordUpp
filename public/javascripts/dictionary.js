@@ -12,7 +12,7 @@ var getDictionary = {
   success: function(data) {
     console.log('Whoop whoop');
     console.dir(data);
-    $('.dictionary').append('<li>Word:'+ data.name + '</li>')
+    $('.dictionary').append('<li>'+ data.examples + '</li>')
   },
   error: function() {
     console.log("not working");

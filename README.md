@@ -5,3 +5,8 @@ Daily word application for vocabulary expansion
 
 
 *image sourced from Google Image Search*
+
+
+## Importing JSON Dataset
+
+- `mongoimport --db wordupp --collection words --drop --file word.json --jsonArray`

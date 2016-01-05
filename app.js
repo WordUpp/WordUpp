@@ -6,8 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 require('./db/database');
 
-var routes = require('./routes/index');
+var routes = require('./routes/homepage');
 var words = require('./routes/words');
+var registration = require('./routes/registration');
 
 var app = express();
 
@@ -24,8 +25,9 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', routes);
-app.use('/words', words); // localhost/api/
+app.use('/word', words); // localhost/api/
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

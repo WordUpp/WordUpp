@@ -1,4 +1,5 @@
 //search function using Merriam API
+//this is sudo code until we figure out our views stuff!
 
 $(document).ready(function(){
   var dictionary = $.ajax(getDictionary);
@@ -11,7 +12,7 @@ var getDictionary = {
   success: function(data) {
     console.log('Whoop whoop');
     console.dir(data);
-    $('.dictionary').append('')
+    $('.dictionary').append('<li>Word:'+ data.name + '</li>')
   },
   error: function() {
     console.log("not working");

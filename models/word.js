@@ -8,4 +8,4 @@ var WordSchema = new mongoose.Schema({
   Origin: String
 });
 
-module.exports = mongoose.Model('Word', WordSchema);
+module.exports = mongoose.model('Word', WordSchema, 'words');

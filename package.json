@@ -1,5 +1,5 @@
 {
-  "name": "WordUpp",
+  "name": "wordupp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -15,5 +15,18 @@
     "mongoose": "^4.3.4",
     "morgan": "~1.6.1",
     "serve-favicon": "~2.3.0"
-  }
+  },
+  "description": "Daily word application for vocabulary expansion",
+  "main": "app.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WordUpp/WordUpp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/WordUpp/WordUpp/issues"
+  },
+  "homepage": "https://github.com/WordUpp/WordUpp#readme"
 }

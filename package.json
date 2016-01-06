@@ -18,7 +18,9 @@
   },
   "description": "Daily word application for vocabulary expansion",
   "main": "app.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "express-ejs-layouts": "^2.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/WordUpp/WordUpp.git"

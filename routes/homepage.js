@@ -1,6 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
+router.get('/', function(req, res){
+  res.render('dictionary', { 'layout': 'layout' })
+})
 /* GET home page. */
 router.get('/homepage', function(req, res, next) {
   res.render('homepage', {'content-type': 'text/html'});

@@ -1,4 +1,7 @@
 var express = require('express');
+var expressLayouts = require('express-ejs-layouts')
+
+
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -8,9 +11,9 @@ require('./db/database');
 
 var routes = require('./routes/homepage');
 var words = require('./routes/words');
-
-
 var app = express();
+app.set('layout', 'layout') // defaults to 'layout'
+app.use(expressLayouts)
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

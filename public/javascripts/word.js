@@ -1,2 +1,2 @@
-var app = app || {};
-var active = active || {};
+// var app = app || {};
+// var active = active || {};

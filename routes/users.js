@@ -10,16 +10,13 @@ passport.serializeUser(User.serializeUser());
 passport.deserializeUser(User.deserializeUser());
 // end configuration for passport
 
-router.get('/', function(req, res){
+router.get('/userhome', function(req, res){
   res.render('userhome', { user: req.user });
 });
 
-router.get('/', function(req, res){
-  res.render('userhome', { user: req.user });
-});
 
-router.post('/userhome', passport.authenticate('local', { failureRedirect: '/userhome' }), function(req, res) {
-  res.redirect('/');
+router.post('/userhome', passport.authenticate('local', { failureRedirect: '/homepage' }), function(req, res) {
+  res.redirect('/userhome');
 });
 
 router.get('/registration', function(req, res){
@@ -27,18 +24,20 @@ router.get('/registration', function(req, res){
 });
 
 router.post('/registration', function(req, res){
-  User.registration(new User({
-    username: req.body.username //from the form
-  }),
-  req.body.password,
-  function(err, user) {
-    if (err) {
-      return res.render('registration', { user: user });
-    }
-    passport.authenticate('local')(req, res, function() {
-      res.redirect('/homepage');
-    });
+  console.log('1');
+  console.log(req.body);
+  User.register(new User({ username : req.body.username }), req.body.password, function(err, user) {
+      if (err) {
+        console.log(':(');
+        console.log(err);
+         res.render('registration', { });
+      }
+      passport.authenticate('local')(req, res, function () {
+        console.log(':)')
+          res.redirect('/homepage');
+      });
   });
+
 });
 
 router.get('/logout', function(req, res){

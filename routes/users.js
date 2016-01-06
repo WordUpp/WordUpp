@@ -11,14 +11,14 @@ passport.deserializeUser(User.deserializeUser());
 // end configuration for passport
 
 router.get('/', function(req, res){
-  res.render('user', { user: req.user });
+  res.render('userhome', { user: req.user });
 });
 
-router.get('/login', function(req, res){
-  res.render('login', { user: req.user });
+router.get('/', function(req, res){
+  res.render('userhome', { user: req.user });
 });
 
-router.post('/login', passport.authenticate('local', { failureRedirect: '/user' }), function(req, res) {
+router.post('/userhome', passport.authenticate('local', { failureRedirect: '/userhome' }), function(req, res) {
   res.redirect('/');
 });
 

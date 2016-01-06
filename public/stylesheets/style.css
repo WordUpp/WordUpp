@@ -10,16 +10,28 @@
 html, body {
   width: 100%;
   height: 100%;
-  background: url(http://subtlepatterns.com/patterns/sativa.png) repeat fixed;
   font-family: 'Open Sans', sans-serif;
   font-weight: 200; }
+
+.header {
+  position: relative;
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 40px; }
+
+.homepage {
+  margin-left: 200px; }
+
+.input {
+  padding: 8px; }
 
 .login {
   position: relative;
   top: 50%;
   width: 250px;
   display: table;
-  margin: -150px auto 0 auto;
+  margin: -150px auto 100px auto;
   background: #fff;
   border-radius: 4px; }
 
@@ -114,5 +126,8 @@ html, body {
     border-bottom-color: #2ecc71;
     border-width: 10px;
     margin-left: -10px; }
+
+.footer-container {
+  text-align: right; }
 
 /*# sourceMappingURL=style.css.map */

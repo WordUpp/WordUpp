@@ -1,35 +1,23 @@
-<div class="row">
-  <div class="col s12"
 
-<form class="login">
-
-<fieldset>
-
-  <legend class="legend">Login</legend>
-  <div class="input">
-    <input type="email" placeholder="Email" required />
-    <span><i class="fa fa-envelope-o"></i></span>
+  <div class="row">
+    <form class="col s10" action="/userhome">
+      <div class="row">
+        <div class="input-field col s10">
+          <i class="material-icons prefix">account_circle</i>
+          <input id="icon_prefix" type="text" class="validate">
+          <label for="icon_prefix">email</label>
+        </div>
+        <div class="input-field col s10">
+          <i class="material-icons prefix">password</i>
+          <input id="icon_password" type="tel" class="validate">
+          <label for="icon_password">password</label>
+        </div>
+      </div>
+        <button type="submit" method="post" class="submit">GO</button>
+    </form>
   </div>
-
-  <div class="input">
-    <input type="password" placeholder="Password" required />
-    <span><i class="fa fa-lock"></i></span>
+  <div class="signup">
+    <form action="/registration" method="get">
+  <input class="button-primary" type="submit" value="SIGN UP">
   </div>
-
-  <button type="submit" class="submit"><i class="fa fa-long-arrow-right"></i></button>
-
-</fieldset>
-<!-- <div class="feedback">
-  login successful <br />
-  redirecting...
-</div> -->
 </form>
-
-<div class="signup">
-  <a href="/registration"><button>SIGN UP</button></a>
-
-</div>
-
-</div>
-
-</div>

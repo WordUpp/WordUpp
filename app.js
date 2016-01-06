@@ -1,7 +1,6 @@
 var express = require('express');
 var expressLayouts = require('express-ejs-layouts')
 
-
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -16,11 +15,8 @@ require('./db/database');
 
 var routes = require('./routes/homepage');
 var words = require('./routes/words');
-<<<<<<< HEAD
 var users = require('./routes/users');
 
-=======
->>>>>>> 29564e7f9667ef704b84f685a80e04cef92012ab
 var app = express();
 app.set('layout', 'layout') // defaults to 'layout'
 app.use(expressLayouts)

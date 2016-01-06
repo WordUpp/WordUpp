@@ -20,11 +20,8 @@ html, body {
   margin-right: 100px;
   margin-bottom: 40px; }
 
-.homepage {
-  margin-left: 200px; }
-
-.input {
-  padding: 8px; }
+.row {
+  align-items: center; }
 
 .login {
   position: relative;
@@ -129,5 +126,11 @@ html, body {
 
 .footer-container {
   text-align: right; }
+
+#sticky {
+  position: fixed;
+  bottom: 0;
+  height: 10%;
+  margin: 15px; }
 
 /*# sourceMappingURL=style.css.map */

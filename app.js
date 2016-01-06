@@ -1,5 +1,6 @@
 var express = require('express');
-var expressLayouts = require('express-ejs-layouts')
+
+var expressLayouts = require('express-ejs-layouts');
 
 var path = require('path');
 var favicon = require('serve-favicon');
@@ -11,6 +12,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var passport = require('passport');
 var LocalStrategy = require('passport-local').Strategy;
+
 require('./db/database');
 
 var routes = require('./routes/homepage');
@@ -18,7 +20,8 @@ var words = require('./routes/words');
 var users = require('./routes/users');
 
 var app = express();
-app.set('layout', 'layout') // defaults to 'layout'
+
+app.set('layout', 'layout')
 app.use(expressLayouts)
 
 // set up express sessions

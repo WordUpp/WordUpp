@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/homepage', function(req, res, next) {
-  res.render('homepage', {'content-type': 'text/html'});
+data.user = req.user;
+res.render('homepage', {'content-type': 'text/html'});
 });
 
 /* GET registration page. */

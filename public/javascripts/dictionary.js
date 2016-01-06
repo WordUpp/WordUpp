@@ -12,7 +12,7 @@ var getDictionary = {
   success: function(data) {
     console.log('Whoop whoop');
     console.dir(data);
-    $('.dictionary').append('<li>'+ data[i][key] + '</li>')
+    // $('.dictionary').append('<li>'+ data[i][key] + '</li>')
   },
   error: function() {
     console.log("not working");

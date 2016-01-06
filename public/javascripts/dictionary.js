@@ -1,9 +1,6 @@
 //search function using Merriam API
 //this is sudo code until we figure out our views stuff!
 
-var app = app || {};
-var active = active || {};
-
 $(document).ready(function(){
   var dictionary = $.ajax(getDictionary);
 });

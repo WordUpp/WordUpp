@@ -33,7 +33,7 @@ Backbone.Model.idAttribute = "_id";
 // the document is ready
 $(document).ready(function(){
   active.collection = new app.Collection();
-  active.createRecipeView = new app.addRecipeView({
+  // active.createRecipeView = new app.addRecipeView({
     collection: active.collection
-  });
+  // });
 });

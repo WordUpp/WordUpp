@@ -8,8 +8,6 @@ require('./db/database');
 
 var routes = require('./routes/homepage');
 var words = require('./routes/words');
-var registration = require('./routes/registration');
-
 var app = express();
 
 // view engine setup

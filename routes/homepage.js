@@ -3,7 +3,9 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/homepage', function(req, res, next) {
-data.user = req.user;
+// var data = siteData;
+// data.user = req.user;
+// res.render('homepage', siteData);
 res.render('homepage', {'content-type': 'text/html'});
 });
 

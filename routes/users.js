@@ -22,28 +22,28 @@ router.post('/login', passport.authenticate('local', { failureRedirect: '/user' 
   res.redirect('/');
 });
 
-router.get('/register', function(req, res){
-  res.render('register', { user: req.user });
+router.get('/registration', function(req, res){
+  res.render('registration', { user: req.user });
 });
 
-router.post('/register', function(req, res){
-  User.register(new User({
+router.post('/registration', function(req, res){
+  User.registration(new User({
     username: req.body.username //from the form
   }),
   req.body.password,
   function(err, user) {
     if (err) {
-      return res.render('register', { user: user });
+      return res.render('registration', { user: user });
     }
     passport.authenticate('local')(req, res, function() {
-      res.redirect('/');
+      res.redirect('/homepage');
     });
   });
 });
 
 router.get('/logout', function(req, res){
   req.logout();
-  res.redirect('/');
+  res.redirect('/homepage');
 });
 
 module.exports = router;

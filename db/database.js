@@ -15,4 +15,4 @@ mongoose.connection.on('disconnected', function() {
   console.log('ta-ta words!');
 });
 
-//mongoimport --db wordupp --collection words --drop --file dataset.json --jsonArray
+//mongoimport --db wordupp --collection words --drop --file word.json --jsonArray

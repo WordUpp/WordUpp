@@ -34,15 +34,17 @@ router.get('/registration', function(req, res){
 
 //register/
 router.post('/registration', function(req, res){
-  Account.register(new Account({ username : req.body.username }), req.body.password, function(err, account) {
+  console.log('1');
+  console.log(req.body);
+  Account.register(new Account({ username : req.body.username }), req.body.password, function(err, user) {
       if (err) {
         console.log(':(');
         console.log(err);
-        return res.render('registration', { account : account });
-        }
+         res.render('registration', { });
+      }
       passport.authenticate('local')(req, res, function () {
-        console.log(':)');
-          res.redirect('/account/wordoftheday');
+        console.log(':)')
+          res.redirect('homepage');
       });
   });
 

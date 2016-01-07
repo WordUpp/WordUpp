@@ -13,7 +13,13 @@
 //
 //  $link-color: color("light-blue", "darken-1") !default;
 
- // Set background image (pattern)
+$white: #f1f3f1;
+$cream: #eadfc5;
+$teal: #1997c2;
+$turquoise: #114355;
+$black: #111008;
+
+
  *{
    -ms-box-sizing: border-box;
  	-moz-box-sizing: border-box;
@@ -29,6 +35,8 @@
    height: 100%;
    font-family: 'Open Sans', sans-serif;
    font-weight: 200;
+   background-color: $teal;
+   color: $white;
  }
 
  .header{
@@ -38,17 +46,18 @@
    margin-right: 100px;
    margin-bottom: 40px;
    padding: 2px;
+   font-color: $cream;
  }
 
- .brand-logo .center{
-  margin-top: 12px;
+ .nav-wrapper{
+   background-color:$turquoise;
+   font-color: $cream;
+ }
+
+ .brand-logo{
+  margin-top: 10px;
+  font-color: #eadfc5;
 }
-
- .login{
-
- }
-
-
 
  .submit{
    width: 45px;
@@ -70,22 +79,25 @@
      outline: 0;
    }
  }
- #registration{
+  #registration{
    margin: 50px;
  }
 
  .footer-container{
    text-align: center;
+   background-color: $turquoise;
  }
 
  .footer-copyright{
-   text-align: center;
+   text-align: right;
+   background-color: $turquoise;
  }
 
- .page-footer{
+ footer.page-footer{
    position: fixed;
    bottom: 0;
-   height: 20%;
+   height: 18%;
    margin: 0px;
    width: 100%;
+   background-color: $turquoise;
  }

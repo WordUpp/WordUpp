@@ -13,11 +13,6 @@ passport.deserializeUser(User.deserializeUser());
 router.get('/userhome', function(req, res){
   res.render('userhome', { user: req.user });
 });
-//
-// router.get('/homepage', function(req, res){
-//   res.render('userhome', { user: req.user });
-// });
-
 
 router.post('/homepage', passport.authenticate('local', { failureRedirect: '/homepage' }), function(req, res) {
   if (err) {
@@ -38,7 +33,7 @@ router.post('/registration', function(req, res){
         console.log(':(');
         console.log(err);
          res.render('/registration', { user : user });
-      }
+        }
       passport.authenticate('local')(req, res, function () {
         console.log(':)')
           res.redirect('/user/userhome');

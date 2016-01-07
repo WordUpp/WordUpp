@@ -9,7 +9,7 @@ var siteData = {
 };
 
 router.get('/', function(req, res){
-  res.render('dictionary', { 'layout': 'layout' })
+  res.render('layout', { 'layout': 'layout' })
 })
 /* GET home page. */
 router.get('/homepage', function(req, res, next) {

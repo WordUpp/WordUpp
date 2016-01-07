@@ -8,7 +8,7 @@ mongoose.connection.on('connected', function() {
 });
 
 mongoose.connection.on('error', function() {
-  console.log('no words for you!');
+  console.log(err);
 });
 
 mongoose.connection.on('disconnected', function() {

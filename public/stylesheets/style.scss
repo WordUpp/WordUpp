@@ -40,9 +40,13 @@
    padding: 2px;
  }
 
-.brand-logo{
+ .brand-logo .center{
   margin-top: 12px;
 }
+
+ .navbar-fixed{
+
+ }
 
  .submit{
    width: 45px;
@@ -68,9 +72,6 @@
    margin: 50px;
  }
 
-
-
-
  .footer-container{
    text-align: center;
  }
@@ -84,4 +85,5 @@
    bottom: 0;
    height: 20%;
    margin: 0px;
+   width: 100%;
  }

@@ -55,6 +55,7 @@ html, body {
   position: fixed;
   bottom: 0;
   height: 20%;
-  margin: 0px; }
+  margin: 0px;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */

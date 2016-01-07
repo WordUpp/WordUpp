@@ -20,6 +20,9 @@ router.get('/userhome', function(req, res){
 
 
 router.post('/homepage', passport.authenticate('local', { failureRedirect: '/homepage' }), function(req, res) {
+  if (err) {
+    res.render('registration')
+  }
   res.redirect('/user/userhome');
 });
 
@@ -28,13 +31,13 @@ router.get('/registration', function(req, res){
 });
 
 router.post('/registration', function(req, res){
-  console.log('1');
-  console.log('we got an error');
+  // console.log('1');
+  // console.log('we got an error');
   User.register(new User({ username : req.body.username }), req.body.password, function(err, user) {
       if (err) {
         console.log(':(');
         console.log(err);
-         res.render('registration', { user : user });
+         res.render('/registration', { user : user });
       }
       passport.authenticate('local')(req, res, function () {
         console.log(':)')

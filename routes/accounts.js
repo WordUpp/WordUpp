@@ -35,7 +35,7 @@ router.get('/registration', function(req, res){
 router.post('/registration', function(req, res){
   console.log('1');
   console.log(req.body);
-  Account.registration(new Account({ username : req.body.username }),
+  Account.register(new Account({ username : req.body.username }),
   req.body.password,
   function(err, account) {
       if (err) {

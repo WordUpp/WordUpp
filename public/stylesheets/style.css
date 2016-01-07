@@ -1,1 +1,85 @@
+<<<<<<< HEAD
 *{-ms-box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;margin:0;padding:0;border:0}html,body{width:100%;height:100%;font-family:'Open Sans',sans-serif;font-weight:200}.header{position:relative;text-align:center;margin-left:100px;margin-right:100px;margin-bottom:40px}.submit{width:45px;height:45px;display:block;margin:0 auto -15px auto;background:#fff;border-radius:100%;border:1px solid #FF7052;color:#FF7052;font-size:24px;cursor:pointer;box-shadow:0px 0px 0px 7px #fff;transition:.2s ease-out}.submit:hover,.submit:focus{background:#FF7052;color:#fff;outline:0}#registration{margin:50px}.footer-container{text-align:center}.footer-copyright{text-align:right}
+=======
+*{
+   -ms-box-sizing: border-box;
+ 	-moz-box-sizing: border-box;
+ 	-webkit-box-sizing: border-box;
+ 	box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   border: 0;
+ }
+
+
+ html, body{
+   width: 100%;
+   height: 100%;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 200;
+ }
+
+ .header{
+   position: relative;
+   text-align: center;
+   margin-left: 100px;
+   margin-right: 100px;
+   margin-bottom: 40px;
+   padding: 2px;
+ }
+
+.brand-logo{
+  margin-top: 12px;
+  text-align: center;
+}
+
+ .submit{
+   width: 45px;
+   height: 45px;
+   display: block;
+   margin: 0 auto -15px auto;
+   background: #fff;
+   border-radius: 100%;
+   border: 1px solid #FF7052;
+   color: #FF7052;
+   font-size: 24px;
+   cursor: pointer;
+   box-shadow: 0px 0px 0px 7px #fff;
+   transition: 0.2s ease-out;
+
+   &:hover, &:focus{
+     background: #FF7052;
+     color: #fff;
+     outline: 0;
+   }
+ }
+ #registration{
+   margin: 50px;
+ }
+
+
+
+
+ .footer-container{
+   text-align: center;
+ }
+
+ .footer-copyright{
+   text-align: right;
+ }
+
+
+ .page-footer{
+   position: fixed;
+   bottom: 0;
+   height: 20%;
+   margin: 0px;
+   width: 100%;
+ }
+
+.container {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
+>>>>>>> 26e7e2c1bb3c7a032c789a21d8181e96e57f6927

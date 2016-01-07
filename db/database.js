@@ -8,7 +8,7 @@ mongoose.connection.on('connected', function() {
 });
 
 mongoose.connection.on('error', function() {
-  console.log(err);
+  console.log(error);
 });
 
 mongoose.connection.on('disconnected', function() {

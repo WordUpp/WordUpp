@@ -15,14 +15,14 @@ router.get('/', function(req, res){
 });
 
 //LOGIN//
-router.get('/homepage', function(req, res){
+router.get('/login', function(req, res){
   res.render('homepage', { user: req.user });
 });
 
 //LOGIN//
-router.post('/homepage', passport.authenticate('local', { failureRedirect: '/homepage' }),
+router.post('/login', passport.authenticate('local', { failureRedirect: '/homepage' }),
   function(req, res) {
-    res.redirect('/');
+    res.redirect('/wordoftheday');
   }
 );
 
@@ -45,7 +45,7 @@ router.post('/registration', function(req, res){
       }
       passport.authenticate('local')(req, res, function () {
         console.log(':)')
-          res.redirect('wordoftheday');
+          res.redirect('/wordoftheday');
       });
   });
 

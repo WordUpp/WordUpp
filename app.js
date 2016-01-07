@@ -1,5 +1,4 @@
 var express = require('express');
-
 var expressLayouts = require('express-ejs-layouts');
 
 var path = require('path');

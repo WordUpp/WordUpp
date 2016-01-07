@@ -19,5 +19,9 @@ res.render('homepage', data);
 res.render('homepage', {'content-type': 'text/html'});
 });
 
+// /* GET registration page. */
+router.get('/registration', function(req, res){
+  res.render('registration', { user: req.user });
+});
 
 module.exports = router;

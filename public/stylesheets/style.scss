@@ -24,12 +24,7 @@
    border: 0;
  }
 
- html, body{
-   width: 100%;
-   height: 100%;
-   font-family: 'Open Sans', sans-serif;
-   font-weight: 200;
- }
+
 
  .header{
    position: relative;
@@ -39,11 +34,6 @@
    margin-bottom: 40px;
 
  }
-
-.row{
-  align-items: center;
-}
-
 
 
  // Start styles in form
@@ -171,13 +161,21 @@
    }
  }
 
+.page-footer{
+  bottom: 0;
+}
+
  .footer-container{
+   text-align: center;
+ }
+
+ .footer-copyright{
    text-align: right;
  }
 
- #sticky{
-   position: fixed;
-   bottom: 0;
-   height: 10%;
-   margin: 15px;
- }
+ // #sticky{
+ //   position: fixed;
+ //   bottom: 0;
+ //   height: 10%;
+ //   margin: 15px;
+ // }

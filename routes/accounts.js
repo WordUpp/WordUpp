@@ -1,3 +1,9 @@
+var express = require('express');
+var passport = require('passport');
+var LocalStrategy = require('passport-local').Strategy;
+var Account = require('../models/Account');
+var router = express.Router();
+
 // configure passport
 passport.use(new LocalStrategy(Account.authenticate()));
 passport.serializeUser(Account.serializeUser());
@@ -9,14 +15,14 @@ router.get('/', function(req, res){
 });
 
 //LOGIN//
-router.get('/homepage', function(req, res){
+router.get('/login', function(req, res){
   res.render('homepage', { user: req.user });
 });
 
 //LOGIN//
-router.post('/homepage', passport.authenticate('local', { failureRedirect: '/homepage' }),
+router.post('/login', passport.authenticate('local', { failureRedirect: '/homepage' }),
   function(req, res) {
-    res.redirect('/');
+    res.redirect('/wordoftheday');
   }
 );
 
@@ -29,7 +35,7 @@ router.get('/registration', function(req, res){
 router.post('/registration', function(req, res){
   console.log('1');
   console.log(req.body);
-  Account.registration(new Account({ username : req.body.username }),
+  Account.register(new Account({ username : req.body.username }),
   req.body.password,
   function(err, account) {
       if (err) {
@@ -39,7 +45,7 @@ router.post('/registration', function(req, res){
       }
       passport.authenticate('local')(req, res, function () {
         console.log(':)')
-          res.redirect('wordoftheday');
+          res.redirect('/wordoftheday');
       });
   });
 

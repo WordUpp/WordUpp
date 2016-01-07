@@ -4,11 +4,11 @@ var model = require('../models/Word');
 
 //GET words
 router.get('/', function(req, res, next) {
-  model.find(function(err, words) {
+  model.find(function(err, word) {
     if (err) {
       res.send(err);
     } else {
-      res.json(words);
+      res.json(word);
     }
   });
 });

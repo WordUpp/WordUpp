@@ -127,6 +127,7 @@ $(function (){
     type: 'GET',
     url: '/word',
     success: function(wod) {
+      console.log(wo)
       $.each(wod, function(i, wod) {
         $wod.append($('body'));
       });

@@ -13,10 +13,14 @@ passport.deserializeUser(User.deserializeUser());
 router.get('/userhome', function(req, res){
   res.render('userhome', { user: req.user });
 });
+//
+// router.get('/homepage', function(req, res){
+//   res.render('userhome', { user: req.user });
+// });
 
 
-router.post('/userhome', passport.authenticate('local', { failureRedirect: '/homepage' }), function(req, res) {
-  res.redirect('/userhome');
+router.post('/homepage', passport.authenticate('local', { failureRedirect: '/homepage' }), function(req, res) {
+  res.redirect('/user/userhome');
 });
 
 router.get('/registration', function(req, res){
@@ -32,9 +36,9 @@ router.post('/registration', function(req, res){
         console.log(err);
          res.render('registration', { });
       }
-      passport.authenticate('local')(req, res, function () {
+      passport.authenticate('local')(function (req, res) {
         console.log(':)')
-          res.redirect('/homepage');
+          res.redirect('/user/userhome');
       });
   });
 

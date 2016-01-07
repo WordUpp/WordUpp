@@ -17,7 +17,7 @@ require('./db/database');
 
 var routes = require('./routes/homepage');
 var words = require('./routes/words');
-var users = require('./routes/users');
+var accounts = require('./routes/accounts');
 
 var app = express();
 
@@ -35,10 +35,10 @@ app.use(passport.session());
 // end session setup
 
 // configure passport
-var User = require('./models/User');
-passport.use(new LocalStrategy(User.authenticate()));
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+var Account = require('./models/Account');
+passport.use(new LocalStrategy(Account.authenticate()));
+passport.serializeUser(Account.serializeUser());
+passport.deserializeUser(Account.deserializeUser());
 // end configuration for passport
 
 // view engine setup
@@ -56,7 +56,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/word', words); // localhost/api/
-app.use('/user', users);
+app.use('/account', accounts);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

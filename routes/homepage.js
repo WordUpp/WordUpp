@@ -19,9 +19,8 @@ res.render('homepage', data);
 res.render('homepage', {'content-type': 'text/html'});
 });
 
-// /* GET registration page. */
-router.get('/registration', function(req, res){
-  res.render('registration', { user: req.user });
+router.get('/wordoftheday', function(req, res, next) {
+  res.render('wordoftheday', { title: 'Stuff', message: "Hi friends. Let's send some data to Express using Ajax!" });
 });
 
 module.exports = router;

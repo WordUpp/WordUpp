@@ -15,17 +15,16 @@ router.get('/', function(req, res){
 });
 
 //LOGIN//
-router.get('/homepage', function(req, res){
+router.get('/login', function(req, res){
   res.render('homepage', { user: req.user });
 });
 
 //LOGIN//
-router.post('/homepage', passport.authenticate('local', { failureRedirect: '/homepage' }), function(req, res) {
-  if (err) {
-    res.render('homepage')
+router.post('/login', passport.authenticate('local', { failureRedirect: '/homepage' }),
+  function(req, res) {
+    res.redirect('/wordoftheday');
   }
-  res.redirect('/account/wordoftheday');
-});
+);
 
 // /* GET registration page. */
 router.get('/registration', function(req, res){
@@ -36,7 +35,9 @@ router.get('/registration', function(req, res){
 router.post('/registration', function(req, res){
   console.log('1');
   console.log(req.body);
-  Account.register(new Account({ username : req.body.username }), req.body.password, function(err, user) {
+  Account.register(new Account({ username : req.body.username }),
+  req.body.password,
+  function(err, account) {
       if (err) {
         console.log(':(');
         console.log(err);
@@ -44,7 +45,7 @@ router.post('/registration', function(req, res){
       }
       passport.authenticate('local')(req, res, function () {
         console.log(':)')
-          res.redirect('homepage');
+          res.redirect('/wordoftheday');
       });
   });
 

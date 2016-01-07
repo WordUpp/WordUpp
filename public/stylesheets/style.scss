@@ -37,9 +37,12 @@
    margin-left: 100px;
    margin-right: 100px;
    margin-bottom: 40px;
-
+   padding: 2px;
  }
 
+.brand-logo{
+  margin-top: 12px;
+}
 
  .submit{
    width: 45px;
@@ -66,6 +69,8 @@
  }
 
 
+
+
  .footer-container{
    text-align: center;
  }
@@ -74,9 +79,9 @@
    text-align: right;
  }
 
- // #sticky{
- //   position: fixed;
- //   bottom: 0;
- //   height: 10%;
- //   margin: 15px;
- // }
+ .page-footer{
+   position: fixed;
+   bottom: 0;
+   height: 20%;
+   margin: 0px;
+ }

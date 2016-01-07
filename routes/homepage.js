@@ -19,5 +19,8 @@ res.render('homepage', data);
 res.render('homepage', {'content-type': 'text/html'});
 });
 
+router.get('/wordoftheday', function(req, res, next) {
+  res.render('wordoftheday', { title: 'Stuff', message: "Hi friends. Let's send some data to Express using Ajax!" });
+});
 
 module.exports = router;

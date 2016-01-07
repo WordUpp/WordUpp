@@ -15,7 +15,7 @@ var LocalStrategy = require('passport-local').Strategy;
 
 require('./db/database');
 
-var routes = require('./routes/homepage');
+var homepage = require('./routes/homepage');
 var words = require('./routes/words');
 var accounts = require('./routes/accounts');
 
@@ -54,7 +54,7 @@ app.use(cookieParser());
 app.use(require('less-middleware')(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/', homepage);
 app.use('/word', words); // localhost/api/
 app.use('/account', accounts);
 

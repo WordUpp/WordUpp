@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var model = require('../models/word');
+var model = require('../models/Word');
 
 //GET words
 router.get('/', function(req, res, next) {

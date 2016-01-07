@@ -29,14 +29,14 @@ router.get('/registration', function(req, res){
 
 router.post('/registration', function(req, res){
   console.log('1');
-  console.log(req.body);
+  console.log('we got an error');
   User.register(new User({ username : req.body.username }), req.body.password, function(err, user) {
       if (err) {
         console.log(':(');
         console.log(err);
-         res.render('registration', { });
+         res.render('registration', { user : user });
       }
-      passport.authenticate('local')(function (req, res) {
+      passport.authenticate('local')(req, res, function () {
         console.log(':)')
           res.redirect('/user/userhome');
       });

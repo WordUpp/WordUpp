@@ -1,5 +1,5 @@
 var mongoose = require ('mongoose');
-var connectionString = 'mongodb://localhost/wordupp';
+var connectionString = 'mongodb://localhost/wordupp' || MONGOLAB_URI;
 
 mongoose.connect(connectionString);
 

@@ -23,6 +23,16 @@ router.get('/:id', function(req, res, next) {
   });
 });
 
+router.get('/search/:term', function(req, res){
+  model.find({Word: req.params.term}, function(err, word){
+  if (err){
+    res.send(err);
+  } else {
+    res.json(word);
+  }
+});
+});
+
 router.post('/', function(req, res, next) {
   model.create(req.body, function(err, word){
     if (err) {

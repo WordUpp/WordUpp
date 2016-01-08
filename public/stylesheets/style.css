@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -67,6 +68,9 @@ html, body {
 .validate {
   color: #f1f3f1; }
 
+.card {
+  margin-left: 70px; }
+
 #word {
   font-size: 30px;
   font-weight: bold; }
@@ -101,15 +105,29 @@ footer.page-footer {
   line-height: 1; }
 
 .sfm input {
-  background-color: grey;
-  font-size: 8px;
+  background-color: #ce6946;
+  display: inline-block;
+  width: 125px;
+  height: 44px;
   border: 0px;
   text-transform: uppercase;
-  margin-top: 0px;
-  color: #999;
+  margin-top: 5px;
+  margin-left: 75px;
+  color: #072d3a;
   border: 2 px solid;
   letter-spacing: 1px;
-  padding: 4px 8px;
-  font-family: calibri, helvetica, arial; }
+  padding: 4px 8px; }
+  .sfm input:hover {
+    background: #d47c5e;
+    color: #f1f3f1;
+    outline: 0;
+    border: 1px solid #d47c5e; }
+
+.example q {
+  quotes: "“" "”"; }
+.example q:before {
+  content: open-quote; }
+.example q:after {
+  content: close-quote; }
 
 /*# sourceMappingURL=style.css.map */

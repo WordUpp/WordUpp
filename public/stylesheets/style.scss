@@ -88,6 +88,10 @@ $orange: #ce6946;
    color: $white;
  }
 
+ .card{
+   margin-left: 70px;
+ }
+
  #word{
    font-size: 30px;
    font-weight: bold;
@@ -128,13 +132,35 @@ $orange: #ce6946;
    line-height: 1;
  }
 
- .sfm input {background-color: grey;
-    font-size: 8px;
+ .sfm input {background-color: $orange;
+   display: inline-block;
+    width: 125px;
+    height: 44px;
     border: 0px;
     text-transform: uppercase;
-    margin-top: 0px;
-    color: #999;
+    margin-top: 5px;
+    margin-left: 75px;
+    color: $black;
     border: 2 px solid;
     letter-spacing: 1px;
     padding: 4px 8px;
-    font-family: calibri, helvetica, arial;}
+
+    &:hover{
+      background: $light-orange;
+      color: $white;
+      outline: 0;
+      border: 1px solid $light-orange;
+    }
+  }
+
+.example{
+  q {
+  quotes: "“" "”";
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+}

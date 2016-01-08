@@ -17,6 +17,7 @@ $white: #f1f3f1;
 $cream: #eadfc5;
 $teal: #1997c2;
 $turquoise: #114355;
+$lighter-turquoise: #1a6580;
 $black: #111008;
 
 
@@ -83,6 +84,18 @@ $black: #111008;
    margin: 50px;
  }
 
+ .input-field{
+   color: $white;
+ }
+
+ .input-field .prefix ~ input,
+
+ .input-field .prefix ~ textarea
+
+ .validate{
+   color: $white;
+ }
+
  .footer-container{
    text-align: center;
    background-color: $turquoise;
@@ -90,7 +103,8 @@ $black: #111008;
 
  .footer-copyright{
    text-align: right;
-   background-color: $turquoise;
+   background-color: $lighter-turquoise;
+    margin-bottom: 5px;
  }
 
  footer.page-footer{

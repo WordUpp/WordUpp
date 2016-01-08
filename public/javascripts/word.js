@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 // function Vocabulary(word, wordType, pronunciation, sentence, Origin) {
 //     this.word = word;
 //     this.wordType = wordType;
@@ -121,19 +121,6 @@
 // // make the ajax call
 // $.ajax(ajaxArgument);
 
-$(function (){
-
-  var $wod = $('#wod');
-  $.ajax({
-    type: 'GET',
-    url: '/word',
-    success: function(wod) {
-      console.log(wo)
-      $.each(wod, function(i, wod) {
-        $wod.append($('body'));
-      });
-    }
-=======
 $( document ).ready(function() {
     console.log( "ready!" );
 
@@ -152,5 +139,4 @@ $.ajax({
         $('#origin').append(wod[index].Origin);
       }
     });
->>>>>>> 76c9d9a88c9275135fe278d1903357ad600b34d8
   });

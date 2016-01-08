@@ -36,7 +36,7 @@ $black: #111008;
    height: 100%;
    font-family: 'Open Sans', sans-serif;
    font-weight: 200;
-   background-color: $teal;
+   background-color: $turquoise;
    color: $white;
  }
 
@@ -50,8 +50,12 @@ $black: #111008;
    font-color: $cream;
  }
 
+#streets{
+  margin-bottom: 10px;
+}
+
  .nav-wrapper{
-   background-color:$turquoise;
+   background-color:$teal;
    font-color: $cream;
  }
 
@@ -65,18 +69,18 @@ $black: #111008;
    height: 45px;
    display: block;
    margin: 0 auto -15px auto;
-   background: #fff;
+   background: #c24419;
    border-radius: 100%;
-   border: 1px solid #FF7052;
-   color: #FF7052;
+   border: 2px solid #c24419;
+   color: $cream;
    font-size: 24px;
    cursor: pointer;
-   box-shadow: 0px 0px 0px 7px #fff;
+   box-shadow: 0px 0px 0px 7px #c24419;
    transition: 0.2s ease-out;
 
    &:hover, &:focus{
-     background: #FF7052;
-     color: #fff;
+     background: $cream;
+     color: #c24419;
      outline: 0;
    }
  }
@@ -84,13 +88,9 @@ $black: #111008;
    margin: 50px;
  }
 
- .input-field{
-   color: $white;
- }
-
- .input-field .prefix ~ input,
-
- .input-field .prefix ~ textarea
+ #register{
+  background-color: #c24419;
+}
 
  .validate{
    color: $white;
@@ -98,13 +98,14 @@ $black: #111008;
 
  .footer-container{
    text-align: center;
-   background-color: $turquoise;
+   background-color: $teal;
  }
 
  .footer-copyright{
    text-align: right;
    background-color: $lighter-turquoise;
     margin-bottom: 5px;
+    margin-right:5px;
  }
 
  footer.page-footer{
@@ -113,5 +114,16 @@ $black: #111008;
    height: 18%;
    margin: 0px;
    width: 100%;
-   background-color: $turquoise;
+   background-color: $teal;
+ }
+
+ #sticky{
+    position: fixed;
+    bottom: 0;
+    height: 15%;
+ }
+
+ #github{
+   display: inline-block;
+   line-height: 1;
  }

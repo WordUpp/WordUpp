@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   -ms-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -121,12 +120,5 @@ footer.page-footer {
     color: #f1f3f1;
     outline: 0;
     border: 1px solid #d47c5e; }
-
-.example q {
-  quotes: "“" "”"; }
-.example q:before {
-  content: open-quote; }
-.example q:after {
-  content: close-quote; }
 
 /*# sourceMappingURL=style.css.map */

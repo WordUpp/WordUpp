@@ -1,4 +1,4 @@
-
+//colors
 $white: #f1f3f1;
 $cream: #eadfc5;
 $teal: #2fa1c8;
@@ -8,7 +8,7 @@ $black: #072d3a;
 $light-orange: #d47c5e;
 $orange: #ce6946;
 
-
+//created good spacing on search box- ideally will do this another way
  *{
    -ms-box-sizing: border-box;
  	-moz-box-sizing: border-box;
@@ -51,9 +51,12 @@ $orange: #ce6946;
   font-color: #eadfc5;
 }
 
+//widened form
  .form{
    width: 150px;
  }
+
+ //form input styling
  .submit{
    width: 40px;
    height: 40px;
@@ -76,34 +79,40 @@ $orange: #ce6946;
      border: 1px solid $light-orange;
    }
  }
+
+ //register button on homepage
   #registration{
    margin: 50px;
  }
 
+//register button on register page- which originally changed color but stopped working
  #register{
   background-color: $orange;
 }
 
+//not sure what this is for now
  .validate{
    color: $white;
  }
 
+//word of the day info goes in here
  .card{
    margin-left: 70px;
  }
 
+//actual word
  #word{
    font-size: 30px;
    font-weight: bold;
  }
 
-
+//footer
  .footer-container{
    text-align: center;
    background-color: $teal;
    width: 100%;
  }
-
+//copyright
  .footer-copyright{
    text-align: right;
    background-color: $lighter-turquoise;
@@ -111,6 +120,7 @@ $orange: #ce6946;
     margin-right:5px;
  }
 
+//footer as a whole
  footer.page-footer{
    position: fixed;
    font-weight: bold;
@@ -121,17 +131,20 @@ $orange: #ce6946;
    background-color: $teal;
  }
 
+//makes footer stick to bottom
  #sticky{
     position: sticky;
     bottom: 0;
     height: 15%;
  }
 
+//github logo/link
  #github{
    display: inline-block;
    line-height: 1;
  }
 
+//search box on wod page
  .sfm input {background-color: $orange;
     width: 125px;
     height: 44px;
@@ -152,14 +165,15 @@ $orange: #ce6946;
     }
   }
 
-.example{
-  q {
-  quotes: "“" "”";
-}
-q:before {
-    content: open-quote;
-}
-q:after {
-    content: close-quote;
-}
-}
+//put example sentence in quotes
+// .example{
+//   q {
+//   quotes: "“" "”";
+// }
+// q:before {
+//     content: open-quote;
+// }
+// q:after {
+//     content: close-quote;
+// }
+// }

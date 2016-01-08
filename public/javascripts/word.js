@@ -132,7 +132,7 @@ $.ajax({
         //   $wod.append($('body'));
         // });
         var index = Number.parseInt(Math.random()*wod.length)
-        $('body').append(wod[index].Word);
+        $('#wod').append(wod[index].Word);
         $('#type').append(wod[index].Word_type);
         $('#sound').append(wod[index].Pronunciation);
         $('#example').append(wod[index].Sentence);

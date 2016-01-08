@@ -100,4 +100,16 @@ footer.page-footer {
   display: inline-block;
   line-height: 1; }
 
+.sfm input {
+  background-color: grey;
+  font-size: 8px;
+  border: 0px;
+  text-transform: uppercase;
+  margin-top: 0px;
+  color: #999;
+  border: 2 px solid;
+  letter-spacing: 1px;
+  padding: 4px 8px;
+  font-family: calibri, helvetica, arial; }
+
 /*# sourceMappingURL=style.css.map */

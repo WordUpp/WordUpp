@@ -12,7 +12,7 @@ A daily word application for local vocabulary expansion
 #####Functioning: 
 Login, Register, View a daily word, Search box
 #####Not-functioning/not there: 
-layout/theme due to Less/Materialize conflict, Prompt for incorrect login or register info, Logout button and function Search function
+Prompt for incorrect login or register info, Logout button and function, Search function, ability to refresh and see a new word
 #####Goals: 
 Add ability to search Urban Dictionary or another dictionary api, Save words
 #####Challenges: 

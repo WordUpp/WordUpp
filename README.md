@@ -1,10 +1,13 @@
 # WordUpp
 A daily word application for local vocabulary expansion
 
-![Alt Text](http://img.cache.vevo.com/Content/VevoImages/video/81999202B81A2C01732EF2120B91BFF8.jpg)
+![Alt Text](http://i.imgur.com/UcMbQnE.png)
+![Alt Text](http://i.imgur.com/qwidxcy.png)
+![Alt Text](http://i.imgur.com/fP6CkQv.png)
+![Alt Text](http://i.imgur.com/EHCIqpX.png)
 
 
-*image sourced from Google Image Search*
+
 
 
 ####This app allows you to learn a new local word each day and search for words you've heard. 
